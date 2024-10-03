@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Project Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM0U00Jw/Q1F/1z6h5Htm9Qh5aI5Id4B4t21bE" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<!-- Set html and body background to black to avoid any white space -->
+<html class="bg-black">
+
+<body class="bg-blac text-gray-200 min-h-screen m-0 p-0">
+
+
+    <!-- Navbar -->
+    <div class="navbar bg-gray-900 fixed top-0 left-0 w-full shadow-md z-10">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-gray-800 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a href="#" class="hover:bg-gray-700">HOME</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">ABOUT</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">SERVICES</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">PRODUCTS</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">ACHIEVEMENT</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">CLIENTS</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">APPS</a></li>
+                    <li><a href="#" class="hover:bg-gray-700">CONTACT</a></li>
+                </ul>
+            </div>
+            <a
+                class="ml-4 text-lg md:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Enoy Tech
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#" class="hover:bg-gray-700">HOME</a></li>
+                <li><a href="#" class="hover:bg-gray-700">ABOUT</a></li>
+                <li><a href="#" class="hover:bg-gray-700">SERVICES</a></li>
+                <li><a href="#" class="hover:bg-gray-700">PRODUCTS</a></li>
+                <li><a href="#" class="hover:bg-gray-700">ACHIEVEMENT</a></li>
+                <li><a href="#" class="hover:bg-gray-700">CLIENTS</a></li>
+                <li><a href="#" class="hover:bg-gray-700">APPS</a></li>
+            </ul>
+        </div>
+        <!--  <div class="navbar-end">
+                <a class="btn btn-info text-white">CONTACT</a>
+            </div-->
+    </div>
+
+    <!-- Header banner -->
+    <div class="bg-gray-900 bg-opacity-90 flex flex-col lg:flex-row items-center py-24 px-11">
+        <div class="text-center lg:text-left lg:max-w-lg lg:pr-6">
+            <h1
+                class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent animate-heading">
+                We Have Ideas
+            </h1>
+            <p
+                class="py-4 text-2xl sm:text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent animate-heading">
+                Your Partner in Crafting Innovative Solutions for Digital Success
+            </p>
+            <button
+                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                Start Your Project
+            </button>
+        </div>
+        <div class="mt-8 lg:mt-0 lg:ml-auto">
+            <img src="image/banner.png" class="max-w-full sm:max-w-xs md:max-w-sm animate-image" alt="Banner Image" />
+        </div>
+    </div>
+
+
+
+    <!-- About Us Section - Dynamic Professional Theme -->
+    <section id="about-us" class="bg-black text-white py-20 md:py-28">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+            <h2
+                class="text-4xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                About Us
+            </h2>
+            <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+                Passionate about delivering cutting-edge solutions that help businesses grow in a digital-first world.
+            </p>
+        </div>
+
+        <!-- Features / Catalogue Section with Hover Effects -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+
+            <!-- Vision Card -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                        Our Vision
+                    </h3>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Our vision is to push the boundaries of innovation and design, providing businesses with the
+                        tools to succeed in the digital world.
+                    </p>
+                </div>
+            </div>
+
+            <!-- What We Do Card -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-600">
+                        What We Do
+                    </h3>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        We specialize in creating customized web applications, mobile solutions, and digital marketing
+                        strategies that deliver results.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Our Approach Card -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-600 opacity-10 rounded-lg">
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
+                        Our Approach
+                    </h3>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        We believe in a client-centered approach, building long-term relationships to understand their
+                        needs and create tailored solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Our Core Values Card -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-600">
+                        Our Core Values
+                    </h3>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        At Enoy Tech, we believe in integrity, innovation, and customer satisfaction. Our commitment is
+                        to provide reliable and high-quality solutions that exceed expectations.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Our Specialist Team Section -->
+    <section id="team" class="bg-black text-white">
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+            <h2
+                class="text-4xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Our Specialist Team
+            </h2>
+            <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+                Meet the skilled professionals who drive innovation and excellence at Enoy Tech.
+            </p>
+        </div>
+
+        <!-- Team Members -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+
+            <!-- Team Member 1 -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10 text-center">
+                    <img src="image/profile.jpg" alt="John Doe" class="w-24 h-24 mx-auto rounded-full mb-4">
+                    <h3
+                        class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                        Shanto Islam
+                    </h3>
+                    <p class="text-lg text-gray-400">Lead Web Developer</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">
+                        John is an expert in full-stack web development with over 10 years of experience delivering
+                        top-notch solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10 text-center">
+                    <img src="image/profile.jpg" alt="Jane Smith" class="w-24 h-24 mx-auto rounded-full mb-4">
+                    <h3
+                        class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-600">
+                        Asifurrahman
+                    </h3>
+                    <p class="text-lg text-gray-400">Mobile App Developer</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">
+                        Jane specializes in building intuitive, high-performance mobile apps for both Android and iOS.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-600 opacity-10 rounded-lg">
+                </div>
+                <div class="relative z-10 text-center">
+                    <img src="image/profile.jpg" alt="Alice Johnson" class="w-24 h-24 mx-auto rounded-full mb-4">
+                    <h3
+                        class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
+                        Shahpourn
+                    </h3>
+                    <p class="text-lg text-gray-400">Graphic Designer</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">
+                        Alice is a creative designer with a knack for creating stunning visual content that resonates
+                        with clients.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div
+                class="group relative p-6 bg-neutral-900 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-600 opacity-10 rounded-lg"></div>
+                <div class="relative z-10 text-center">
+                    <img src="image/profile.jpg" alt="Michael Brown" class="w-24 h-24 mx-auto rounded-full mb-4">
+                    <h3
+                        class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-600">
+                        Yousuf Ali
+                    </h3>
+                    <p class="text-lg text-gray-400">Digital Marketing Expert</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">
+                        Michael is skilled in crafting data-driven digital marketing strategies that drive engagement
+                        and growth.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Services Section -->
+    <div class="bg-black">
+        <section id="services" class="relative block px-6 py-10 md:py-20 md:px-10 bg-neutral-900/30">
+            <div class="relative mx-auto max-w-5xl text-center">
+                <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                    Our Expertise
+                </span>
+                <h2
+                    class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                    We Transform Your Vision into Reality
+                </h2>
+                <p
+                    class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+                    Offering a full suite of digital services tailored to meet your needs, ensuring quality and
+                    satisfaction.
+                </p>
+            </div>
+
+            <div id="service-container"
+                class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Web Development -->
+                <div
+                    class="service-box rounded-lg bg-neutral-800/70 p-8 text-center shadow-lg transform transition-transform duration-700 cursor-pointer">
+                    <div
+                        class="icon-container mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full border-2 border-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+                            <line x1="7" y1="20" x2="17" y2="20"></line>
+                            <line x1="9" y1="16" x2="9" y2="20"></line>
+                            <line x1="15" y1="16" x2="15" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-100">Web Development</h3>
+                    <p class="mt-4 text-gray-400">
+                        Develop dynamic, responsive websites that capture your brand's essence and engage your users.
+                    </p>
+                </div>
+
+                <!-- App Development -->
+                <div
+                    class="service-box rounded-lg bg-neutral-800/70 p-8 text-center shadow-lg transform transition-transform duration-700 cursor-pointer">
+                    <div
+                        class="icon-container mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full border-2 border-pink-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="7" y="4" width="10" height="16" rx="1"></rect>
+                            <line x1="11" y1="5" x2="13" y2="5"></line>
+                            <line x1="12" y1="17" x2="12" y2="17.01"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-100">App Development</h3>
+                    <p class="mt-4 text-gray-400">
+                        Create intuitive mobile applications for Android and iOS, focusing on performance and usability.
+                    </p>
+                </div>
+
+                <!-- Graphic Design -->
+                <div
+                    class="service-box rounded-lg bg-neutral-800/70 p-8 text-center shadow-lg transform transition-transform duration-700 cursor-pointer">
+                    <div
+                        class="icon-container mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full border-2 border-yellow-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paint" width="32"
+                            height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17a4 4 0 1 0 8 0m2 -7h2a1 1 0 0 1 0 2h-2m-4 -5v3m-2 -3v3m0 4v5"></path>
+                            <line x1="7" y1="7" x2="17" y2="7"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-100">Graphic Design</h3>
+                    <p class="mt-4 text-gray-400">
+                        Deliver visually stunning designs that enhance brand identity and communicate your message
+                        effectively.
+                    </p>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div
+                    class="service-box rounded-lg bg-neutral-800/70 p-8 text-center shadow-lg transform transition-transform duration-700 cursor-pointer">
+                    <div
+                        class="icon-container mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full border-2 border-yellow-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-megaphone"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M14 9l7 -2v6l-7 -2v5a1 1 0 0 1 -1.557 .83l-2.443 -1.83l-4 0a1 1 0 0 1 -1 -1l0 -5a1 1 0 0 1 1 -1l4 0l2.443 -1.83a1 1 0 0 1 1.557 .83v5">
+                            </path>
+                            <line x1="5" y1="9" x2="5" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-100">Digital Marketing</h3>
+                    <p class="mt-4 text-gray-400">
+                        Drive traffic and growth through expert strategies in SEO, PPC, and social media marketing.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- no need uporer ta -->
+
+    <section class="bg-black text-white pb-12 mt-0 px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-lg text-gray-400 mb-6">Let's take your business to the next level. Get in touch with us
+                today.</p>
+            <a href="#contact"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                Get in Touch
+            </a>
+            <!-- Add some space below the button -->
+
+        </div>
+    </section>
+
+
+
+    <!-- What our clients say -->
+    <section class="py-24 bg-gray-900 bg-opacity-80">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-center">
+                <span class="text-sm text-gray-400 font-medium block mb-2">TESTIMONIAL</span>
+                <h2 class="text-4xl text-white font-bold">What Our Clients Say!</h2>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <div class="flex items-center mb-7 gap-2 text-amber-500">
+                                <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="text-base font-semibold text-indigo-600">4.9</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 pb-8">Pagedone has made it possible for me to
+                                stay on top of my portfolio and make informed decisions quickly.</p>
+                            <div class="flex items-center gap-5 border-t border-solid border-gray-700 pt-5">
+                                <img class="rounded-full h-10 w-10 object-cover"
+                                    src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                                <div class="block">
+                                    <h5 class="text-white font-medium mb-1">Jane D</h5>
+                                    <span class="text-sm text-gray-400">CEO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <div class="flex items-center mb-7 gap-2 text-amber-500">
+                                <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="text-base font-semibold text-indigo-600">4.9</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 pb-8">Pagedone has been instrumental in keeping
+                                my investments and portfolio in check.</p>
+                            <div class="flex items-center gap-5 border-t border-solid border-gray-700 pt-5">
+                                <img class="rounded-full h-10 w-10 object-cover"
+                                    src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                                <div class="block">
+                                    <h5 class="text-white font-medium mb-1">Harsh P.</h5>
+                                    <span class="text-sm text-gray-400">Product Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <div class="flex items-center mb-7 gap-2 text-amber-500">
+                                <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="text-base font-semibold text-indigo-600">4.9</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 pb-8">Pagedone has been instrumental in keeping
+                                my investments and portfolio in check.</p>
+                            <div class="flex items-center gap-5 border-t border-solid border-gray-700 pt-5">
+                                <img class="rounded-full h-10 w-10 object-cover"
+                                    src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                                <div class="block">
+                                    <h5 class="text-white font-medium mb-1">Harsh P.</h5>
+                                    <span class="text-sm text-gray-400">Product Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <div class="flex items-center mb-7 gap-2 text-amber-500">
+                                <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="text-base font-semibold text-indigo-600">4.9</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 pb-8">Pagedone has been instrumental in keeping
+                                my investments and portfolio in check.</p>
+                            <div class="flex items-center gap-5 border-t border-solid border-gray-700 pt-5">
+                                <img class="rounded-full h-10 w-10 object-cover"
+                                    src="https://pagedone.io/asset/uploads/1696229994.png" alt="avatar" />
+                                <div class="block">
+                                    <h5 class="text-white font-medium mb-1">Harsh P.</h5>
+                                    <span class="text-sm text-gray-400">Product Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides here as needed -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Our Pricing -->
+    <section class="py-0 bg-gray-900 bg-opacity-80">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-center">
+                <span class="text-sm text-gray-400 font-medium block mb-2">PRICING</span>
+                <h2 class="text-4xl text-white font-bold">Choose Your Plan!</h2>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-2">Basic Plan</h3>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-extrabold text-indigo-600">$10</span>
+                                <span class="text-gray-400 text-sm ml-1">/ month</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 mb-4">Ideal for individuals starting out.
+                                Includes basic features and support.</p>
+                            <ul class="list-disc list-inside text-gray-400 mb-4">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition duration-300">Select
+                                Plan</button>
+                            <div class="mt-6 border-t border-gray-700 pt-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-2">Standard Plan</h3>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-extrabold text-indigo-600">$20</span>
+                                <span class="text-gray-400 text-sm ml-1">/ month</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 mb-4">Best for small teams. Includes all basic
+                                features plus additional support.</p>
+                            <ul class="list-disc list-inside text-gray-400 mb-4">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition duration-300">Select
+                                Plan</button>
+                            <div class="mt-6 border-t border-gray-700 pt-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-2">Premium Plan</h3>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-extrabold text-indigo-600">$30</span>
+                                <span class="text-gray-400 text-sm ml-1">/ month</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 mb-4">Perfect for larger teams. Includes all
+                                features and priority support.</p>
+                            <ul class="list-disc list-inside text-gray-400 mb-4">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition duration-300">Select
+                                Plan</button>
+                            <div class="mt-6 border-t border-gray-700 pt-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="group bg-gray-800 border border-solid border-gray-700 rounded-xl p-6 transition-all duration-500 hover:border-indigo-600 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-2">Enterprise Plan</h3>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-extrabold text-indigo-600">$50</span>
+                                <span class="text-gray-400 text-sm ml-1">/ month</span>
+                            </div>
+                            <p class="text-base text-gray-300 leading-6 mb-4">Customized solutions for enterprises.
+                                Includes all features and dedicated support.</p>
+                            <ul class="list-disc list-inside text-gray-400 mb-4">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition duration-300">Select
+                                Plan</button>
+                            <div class="mt-6 border-t border-gray-700 pt-4">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container mx-auto p-4">
+        <div class="relative mx-auto max-w-5xl text-center my-12">
+            <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                Why Choose Us
+            </span>
+            <h2
+                class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                Transform Your Ideas into Reality with Our Expertise
+            </h2>
+            <p
+                class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+                With our diverse services in Web Development, App Development, Graphic Design, and Digital Marketing, we
+                ensure
+                that your vision comes to life seamlessly. Our intuitive tools and expert guidance empower you to make
+                impactful
+                choices without requiring technical skills.
+            </p>
+        </div>
+
+        <section id="feature-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Web Development Card -->
+            <div class="feature-card rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
+                    style="background-image: linear-gradient(rgb(63, 81, 181) 0%, rgb(33, 150, 243) 100%); border-color: rgb(25, 118, 210);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 7l-4 4l4 4" />
+                        <path d="M17 7l4 4l-4 4" />
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Web Development</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">We create responsive and
+                    engaging websites tailored to your business needs, ensuring optimal user experience and performance.
+                </p>
+            </div>
+
+            <!-- App Development Card -->
+            <div class="feature-card rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
+                    style="background-image: linear-gradient(rgb(76, 175, 80) 0%, rgb(56, 142, 60) 100%); border-color: rgb(46, 125, 50);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mobile" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1 -2 2H6a2 2 0 0 1 -2 -2V4a2 2 0 0 1 2 -2" />
+                        <path d="M12 18v.01" />
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">App Development</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Our team specializes in
+                    building user-friendly mobile applications that elevate your brand and connect with your audience.
+                </p>
+            </div>
+
+            <!-- Graphic Design Card -->
+            <div class="feature-card rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
+                    style="background-image: linear-gradient(rgb(233, 30, 99) 0%, rgb(213, 0, 50) 100%); border-color: rgb(220, 10, 45);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-artboard" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4h16v16H4z" />
+                        <path d="M4 8h16" />
+                        <path d="M8 4v16" />
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Graphic Design</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Our creative designers
+                    craft stunning visuals that effectively communicate your brand’s message and engage your audience.
+                </p>
+            </div>
+
+            <!-- Digital Marketing Card -->
+            <div class="feature-card rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
+                    style="background-image: linear-gradient(rgb(255, 193, 7) 0%, rgb(255, 152, 0) 100%); border-color: rgb(255, 160, 0);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-line" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 17h18" />
+                        <path d="M3 7l5 5l4 -4l5 5l3 -3" />
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Digital Marketing</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Our marketing experts
+                    develop effective strategies to enhance your online presence and drive measurable results.</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 bg-opacity-80 text-white py-16 px-4">
+        <!-- Box Container with Shadow and Padding -->
+        <div class="max-w-6xl mx-auto bg-neutral-900 shadow-lg shadow-blue-600/50 p-10 rounded-lg">
+            <!-- Wrapper for Flex Layout on lg devices -->
+            <div class="lg:flex lg:justify-between lg:items-center">
+
+                <!-- Left Side: Heading & Contact Details -->
+                <div class="lg:w-1/2 lg:pr-8 mb-12 lg:mb-0 text-center lg:text-left flex flex-col justify-center">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                        Get in Touch
+                    </h2>
+                    <p class="text-base md:text-lg text-gray-400 mt-4 max-w-lg mx-auto lg:mx-0">
+                        We would love to hear from you! Feel free to reach out with any questions or feedback.
+                    </p>
+
+                    <!-- Contact Details -->
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fas fa-phone-alt text-blue-400 text-2xl mr-3"></i>
+                            <span class="text-base md:text-lg text-gray-400">+1 (234) 567-890</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fas fa-envelope text-blue-400 text-2xl mr-3"></i>
+                            <span class="text-base md:text-lg text-gray-400">info@enoytech.com</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 text-2xl mr-3"></i>
+                            <span class="text-base md:text-lg text-gray-400">123 Tech Street, Innovation City</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="lg:w-1/2">
+                    <form id="contactForm" class="bg-neutral-800 p-6 rounded-lg shadow-lg shadow-purple-600/50"
+                        onsubmit="sendEmail(event)">
+                        <div class="mb-4">
+                            <label class="block text-gray-400 mb-2" for="name">Name</label>
+                            <input type="text" id="name"
+                                class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:ring-blue-400"
+                                placeholder="Your Name" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-400 mb-2" for="email">Email</label>
+                            <input type="email" id="email"
+                                class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:ring-blue-400"
+                                placeholder="Your Email" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-400 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:ring-blue-400"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:scale-105 transform transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="bg-black text-white py-6 lg:py-24 px-4 lg:px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-white mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-400">Here are some answers to the most common questions we get. If you need
+                further assistance, feel free to contact us.</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="collapse collapse-arrow border border-gray-700 rounded-lg">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-lg font-semibold text-white">
+                    What services do you offer?
+                </div>
+                <div class="collapse-content px-6 pb-6 text-gray-400">
+                    We offer a wide range of services including website design, development, SEO optimization, and
+                    digital marketing.
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="collapse collapse-arrow border border-gray-700 rounded-lg">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-lg font-semibold text-white">
+                    How can I contact support?
+                </div>
+                <div class="collapse-content px-6 pb-6 text-gray-400">
+                    You can contact our support team via email at support@yourdomain.com or through our contact page.
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="collapse collapse-arrow border border-gray-700 rounded-lg">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-lg font-semibold text-white">
+                    Do you offer custom solutions for businesses?
+                </div>
+                <div class="collapse-content px-6 pb-6 text-gray-400">
+                    Yes, we provide custom solutions tailored to the needs of your business. Our team will work closely
+                    with you to create the perfect fit.
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="collapse collapse-arrow border border-gray-700 rounded-lg">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-lg font-semibold text-white">
+                    What is the pricing for your services?
+                </div>
+                <div class="collapse-content px-6 pb-6 text-gray-400">
+                    Our pricing varies depending on the project size and scope. Contact us for a custom quote tailored
+                    to your business needs.
+                </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="collapse collapse-arrow border border-gray-700 rounded-lg">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-lg font-semibold text-white">
+                    How long does it take to build a website?
+                </div>
+                <div class="collapse-content px-6 pb-6 text-gray-400">
+                    The time required to build a website depends on its complexity, but typically it takes anywhere from
+                    4 to 12 weeks.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 p-10 bg-gray-900 text-white mt-12">
+        <!-- Contact Information -->
+        <nav class="col-span-2 w-auto lg:w-4/6 flex flex-col items-center justify-center text-center px-6 sm:justify-start sm:items-start sm:text-start sm:px-2">
+            <header class="text-white font-bold text-xl mb-4">Get In Touch</header>
+            <p class="text-sm text-gray-300 mb-6 text-center lg:text-left">We’re here to help. Reach us via email,
+                phone, or visit our office.</p>
+
+            <div class="flex gap-4 justify-center items-center mb-4">
+                <a href="mailto:info@enoytech.com"
+                    class="flex items-center space-x-2 hover:text-blue-500 transition duration-300">
+                    <i class="fas fa-envelope text-3xl text-blue-400"></i>
+                    <span class="text-gray-300">info@enoytech.com</span>
+                </a>
+            </div>
+
+            <div class="flex gap-4 justify-center items-center mb-4">
+                <a href="tel:+8801810479192"
+                    class="flex items-center space-x-2 hover:text-blue-500 transition duration-300">
+                    <i class="fas fa-phone text-3xl text-blue-400"></i>
+                    <span class="text-gray-300">+880 18104-79196</span>
+                </a>
+            </div>
+
+
+        </nav>
+
+        <!-- About Section -->
+        <nav>
+            <header class="font-bold text-white text-sm mb-2">Enoy Tech</header>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">About Us</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Contact</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Careers</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Our Team</a>
+        </nav>
+
+        <!-- Support Links -->
+        <nav>
+            <header class="font-bold text-white text-sm mb-2">Support</header>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Terms of Use</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Privacy Policy</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Cookie Policy</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">FAQs</a>
+        </nav>
+
+        <!-- Services Section -->
+        <nav class="col-span-2 m-auto sm:m-0 flex flex-col items-center lg:items-start">
+            <header class="font-bold text-white text-sm mb-2">Services</header>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Web Development</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Mobile App
+                Development</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Cloud Solutions</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">IT Consulting</a>
+            <a class="link link-hover text-gray-400 hover:text-blue-500 transition duration-300">Cybersecurity
+                Services</a>
+        </nav>
+
+
+        
+    </footer>
+
+<!-- Copyright Section -->
+<div class="col-span-1 text-center pt-2 border-t border-gray-700 flex justify-between px-4 lg:px-20">
+    <p class="text-gray-400 text-sm">
+        &copy; <span id="year"></span> <span class="font-semibold text-blue-400">Enoy Tech</span>. All rights reserved.
+    </p>
+    <p class="text-gray-500 text-xs mt-1 mb-2">
+        Crafted with <span class="text-red-500">&hearts;</span> by Enoy Tech Team
+    </p>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

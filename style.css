@@ -1,0 +1,66 @@
+/* Animation for heading text */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-heading {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation for image */
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-image {
+    animation: slide 2s ease-in-out infinite;
+}
+
+/* Ensure proper margin and padding */
+.py-24 {
+    padding-top: 6rem; /* Adjust as needed */
+    padding-bottom: 6rem; /* Adjust as needed */
+}
+
+.lg\:pr-6 {
+    padding-right: 1.5rem; /* Adjust as needed */
+}
+
+.mt-8 {
+    margin-top: 2rem; /* Adjust as needed */
+}
+
+.lg\:ml-auto {
+    margin-left: auto; /* Align image to the right */
+}
+
+    
+    
+    
+    /* 3D Animation Effect */
+    .selected {
+        transform: scale(1.05) translateZ(0);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      
+
+
+      .footer a.link:hover {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 255, 0.5);
+    }
